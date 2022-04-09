@@ -1,11 +1,20 @@
-# py_mosaic
+# Generating Photo Mosaics with Python
+
 Python program that creates mosaic images from a main photo comprised of many small images
 
-Instructions:
-1. from the directory containing main.py open cmd and type: python main.py
-2. enter the path to the large image
-3. enter the path to the folder containing your small images
-4. enter a value between 1000 and 20000 (this will be the dimensions squared of the large image)
-5. enter a value between 10-200 (this will be the dimensions of the small images that will make up your mosaic)
-6. once main.py runs, a file called result.jpg will be saved in the folder containing main.py: if you like the result, rename it so it isn't overwritten when you run the program again.
-7. repeat the process with different results until you get a file that you like.
+## Quick-start
+
+```txt
+usage: main.py [-h] [--large_image_path LARGE_IMAGE_PATH] [--small_image_folder SMALL_IMAGE_FOLDER] [--final_size FINAL_SIZE] [--small_image_size SMALL_IMAGE_SIZE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --large_image_path LARGE_IMAGE_PATH
+                        path to the large image
+  --small_image_folder SMALL_IMAGE_FOLDER
+                        path to the small images folder(folder should contain between 400-1,000 images for best results
+  --final_size FINAL_SIZE
+                        target height of final image (pixel values between 1,000-20,000 for best results)
+  --small_image_size SMALL_IMAGE_SIZE
+                        size of small images (pixel values between 50-200 for best results)
+```
